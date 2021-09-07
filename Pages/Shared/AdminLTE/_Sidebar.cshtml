@@ -9,7 +9,7 @@
              class="brand-image img-circle elevation-0"
              style="opacity: .8">
         <div>
-            <span class="brand-text font-weight-light">AdminLTE Starter Kit</span>
+            <span class="brand-text font-weight-light">Гипроречтранс</span>
         </div>
 
     </a>
@@ -56,43 +56,67 @@
                     <a is-active-page asp-page="/Index" class="nav-link">
                         <i class="nav-icon fas fa-home"></i>
                         <p>
-                            Home
+                            Главная
                         </p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a is-active-page asp-page="/BranchesPages/Index" class="nav-link">
-                        <i class="nav-icon fas fa-home"></i>
+                        <i class="nav-icon fas fa-braille"></i>
                         <p>
-                            BranchesPages
+                            Отделы
                         </p>
                     </a>
                 <li class="nav-item">
-                    <a href="/" class="nav-link">
+                    <a href="/DocCategoriesPages" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Document Repository
+                            Категории документов
                         </p>
                     </a>
                 </li>
-                <li class="nav-item has-treeview">
-                    <a is-active-page asp-area="Mail" asp-page="/Compose" class="nav-link">
-                        <i class="nav-icon fas fa-mail-bulk"></i>
+                <li class="nav-item">
+                    <a href="/DocumentsPages" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
                         <p>
-                            Mail
-                            <i class="right fas fa-angle-left"></i>
+                            Документы
                         </p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a is-active-page asp-area="Mail" asp-page="/Compose" class="nav-link">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>Compose Mail</p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
-                <li class="nav-header">Settings</li>
+                <li class="nav-item">
+                    <a href="/EmployeesPages" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Сотрудники
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/PositionPages" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Должности
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/ReportCategoriesPages" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Категории отчетов
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/ReportsPages" class="nav-link">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Отчеты
+                        </p>
+                    </a>
+                </li>
+               
+                <li class="nav-header">Настройки</li>
                 <li class="nav-item">
                     <a is-active-page asp-area="Identity" asp-page="/Account/Manage/Index" class="nav-link">
                         <i class="nav-icon fas fa-cogs"></i>

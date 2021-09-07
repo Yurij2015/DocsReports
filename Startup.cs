@@ -59,14 +59,14 @@ namespace DocsReports
             services.Configure<SMTPSettings>(Configuration.GetSection("SMTPSettings"));
             services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
             services.AddScoped<IEmailService, EmailService>();
-
             services.AddLiveReload(config =>
-            {
+{
                 // optional - use config instead
                 //config.LiveReloadEnabled = true;
                 //config.FolderToMonitor = Path.GetFullname(Path.Combine(Env.ContentRootPath,"..")) ;
             });
-
+            services.AddRazorPages().AddRazorRuntimeCompilation();
+            services.AddMvc().AddRazorRuntimeCompilation();
 
         }
 
