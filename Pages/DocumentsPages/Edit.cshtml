@@ -1,0 +1,71 @@
+﻿@page
+@model DocsReports.Pages.DocumentsPages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Pages/Shared/AdminLTE/_Layout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>Documents</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Documents.Id" />
+            <div class="form-group">
+                <label asp-for="Documents.Title" class="control-label"></label>
+                <input asp-for="Documents.Title" class="form-control" />
+                <span asp-validation-for="Documents.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Documents.Description" class="control-label"></label>
+                <input asp-for="Documents.Description" class="form-control" />
+                <span asp-validation-for="Documents.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Documents.Dateadd" class="control-label"></label>
+                <input asp-for="Documents.Dateadd" class="form-control" />
+                <span asp-validation-for="Documents.Dateadd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Documents.EmployeeSend" class="control-label"></label>
+                <select asp-for="Documents.EmployeeSend" class="form-control" asp-items="ViewBag.EmployeeSend"></select>
+                <span asp-validation-for="Documents.EmployeeSend" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Documents.EployeeSent" class="control-label"></label>
+                <select asp-for="Documents.EployeeSent" class="form-control" asp-items="ViewBag.EployeeSent"></select>
+                <span asp-validation-for="Documents.EployeeSent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Documents.PageCount" class="control-label"></label>
+                <input asp-for="Documents.PageCount" class="form-control" />
+                <span asp-validation-for="Documents.PageCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Documents.ArchiveId" class="control-label"></label>
+                <input asp-for="Documents.ArchiveId" class="form-control" />
+                <span asp-validation-for="Documents.ArchiveId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Documents.DocCategoryId" class="control-label"></label>
+                <select asp-for="Documents.DocCategoryId" class="form-control" asp-items="ViewBag.DocCategoryId"></select>
+                <span asp-validation-for="Documents.DocCategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
