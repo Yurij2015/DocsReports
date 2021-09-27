@@ -34,7 +34,7 @@ namespace DocsReports
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDbContext<DocsReportsContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DocsDataConnection")));
+                    Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
                     .AddEntityFrameworkStores<ApplicationDbContext>()
                     .AddDefaultUI()
