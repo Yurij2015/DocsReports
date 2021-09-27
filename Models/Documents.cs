@@ -35,7 +35,9 @@ namespace DocsReports.Models
         [Display(Name = "Категория документа")]
 
         public virtual DocCategories DocCategory { get; set; }
+        [Display(Name = "Сотрудник отправитель")]
         public virtual Employees EmployeeSendNavigation { get; set; }
+        [Display(Name = "Сотрудник получатель")]
         public virtual Employees EployeeSentNavigation { get; set; }
     }
 }

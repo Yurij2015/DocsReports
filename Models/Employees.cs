@@ -35,9 +35,13 @@ namespace DocsReports.Models
         [Display(Name = "Должность")]
 
         public virtual Positions Postion { get; set; }
+        [Display(Name = "Отправитель документа")]
         public virtual ICollection<Documents> DocumentsEmployeeSendNavigation { get; set; }
+        [Display(Name = "Получатель документа")]
         public virtual ICollection<Documents> DocumentsEployeeSentNavigation { get; set; }
+        [Display(Name = "Отчет для сотрудника")]
         public virtual ICollection<Reports> ReportsEmployeeReceiptNavigation { get; set; }
+        [Display(Name = "Отчет отправил сотрудник")]
         public virtual ICollection<Reports> ReportsEmployeeSendNavigation { get; set; }
     }
 }

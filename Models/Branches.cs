@@ -17,6 +17,7 @@ namespace DocsReports.Models
         [Display(Name = "Описание")]
         public string Descripton { get; set; }
 
+        [Display(Name = "Сотрудник")]
         public virtual ICollection<Employees> Employees { get; set; }
     }
 }

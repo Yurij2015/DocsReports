@@ -16,6 +16,7 @@ namespace DocsReports.Models
 
         public string Title { get; set; }
 
+        [Display(Name = "Сотрудник")]
         public virtual ICollection<Employees> Employees { get; set; }
     }
 }

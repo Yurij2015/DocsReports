@@ -31,9 +31,14 @@ namespace DocsReports.Models
         [Display(Name = "")]
 
         public int? ReportCategoryId { get; set; }
+        [Display(Name = "Сотрудник получатель")]
 
         public virtual Employees EmployeeReceiptNavigation { get; set; }
+        [Display(Name = "Сотрудник отправитель")]
+
         public virtual Employees EmployeeSendNavigation { get; set; }
+        [Display(Name = "Категория отчета")]
+
         public virtual ReportCategories ReportCategory { get; set; }
     }
 }

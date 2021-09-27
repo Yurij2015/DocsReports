@@ -19,6 +19,7 @@ namespace DocsReports.Models
 
         public string Description { get; set; }
 
+        [Display(Name = "Документ")]
         public virtual ICollection<Documents> Documents { get; set; }
     }
 }

@@ -24,8 +24,8 @@ namespace DocsReports.Data
             {
                 UserName = "superadmin",
                 Email = "superadmin@gmail.com",
-                FirstName = "Mukesh",
-                LastName = "Murugan",
+                FirstName = "Ivanov",
+                LastName = "Ivan",
                 EmailConfirmed = true,
                 PhoneNumberConfirmed = true
             };
